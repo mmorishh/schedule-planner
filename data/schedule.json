@@ -1,0 +1,225 @@
+{
+  "groups": [
+    {"id": "201", "name": "Группа 201", "students": 24},
+    {"id": "202", "name": "Группа 202", "students": 26},
+    {"id": "203", "name": "Группа 203", "students": 23},
+    {"id": "204", "name": "Группа 204", "students": 25}
+  ],
+  "teachers": [
+    {"id": "ivanova", "name": "Иванова М.И.", "department": "Высшая математика"},
+    {"id": "petrov", "name": "Петров В.П.", "department": "Физика"},
+    {"id": "sokolov", "name": "Соколов А.С.", "department": "Программирование"},
+    {"id": "mikhailova", "name": "Михайлова Е.М.", "department": "Базы данных"},
+    {"id": "dmitriev", "name": "Дмитриев Д.Д.", "department": "Компьютерные сети"},
+    {"id": "alexeeva", "name": "Алексеева Н.А.", "department": "Иностранный язык"}
+  ],
+  "classrooms": [
+    {"id": "401", "name": "Ауд. 401", "capacity": 120, "room_type": "lecture"},
+    {"id": "402", "name": "Ауд. 402", "capacity": 120, "room_type": "lecture"},
+    {"id": "301", "name": "Ауд. 301", "capacity": 35, "room_type": "practice"},
+    {"id": "302", "name": "Ауд. 302", "capacity": 35, "room_type": "practice"},
+    {"id": "303", "name": "Ауд. 303", "capacity": 35, "room_type": "practice"},
+    {"id": "304", "name": "Ауд. 304", "capacity": 35, "room_type": "practice"},
+    {"id": "lab1", "name": "Лаборатория 1", "capacity": 20, "room_type": "lab"},
+    {"id": "lab2", "name": "Лаборатория 2", "capacity": 20, "room_type": "lab"}
+  ],
+  "subjects": [
+    {"id": "math", "name": "Высшая математика", "hours": 4},
+    {"id": "phys", "name": "Физика", "hours": 3},
+    {"id": "prog", "name": "Программирование", "hours": 4},
+    {"id": "db", "name": "Базы данных", "hours": 3},
+    {"id": "networks", "name": "Компьютерные сети", "hours": 2},
+    {"id": "english", "name": "Английский язык", "hours": 2}
+  ],
+  "lessons": [
+    {
+      "id": "math_lec",
+      "subject": "math",
+      "type": "лекция",
+      "groups": ["201", "202", "203", "204"],
+      "teacher": "ivanova",
+      "classroom": "401",
+      "hours_per_week": 2
+    },
+    {
+      "id": "math_prac_201",
+      "subject": "math",
+      "type": "практика",
+      "groups": ["201"],
+      "teacher": "ivanova",
+      "classroom": "301",
+      "hours_per_week": 1
+    },
+    {
+      "id": "math_prac_202",
+      "subject": "math",
+      "type": "практика",
+      "groups": ["202"],
+      "teacher": "ivanova",
+      "classroom": "302",
+      "hours_per_week": 1
+    },
+    {
+      "id": "math_prac_203",
+      "subject": "math",
+      "type": "практика",
+      "groups": ["203"],
+      "teacher": "petrov",
+      "classroom": "303",
+      "hours_per_week": 1
+    },
+    {
+      "id": "math_prac_204",
+      "subject": "math",
+      "type": "практика",
+      "groups": ["204"],
+      "teacher": "petrov",
+      "classroom": "304",
+      "hours_per_week": 1
+    },
+    {
+      "id": "phys_lec",
+      "subject": "phys",
+      "type": "лекция",
+      "groups": ["201", "202"],
+      "teacher": "petrov",
+      "classroom": "402",
+      "hours_per_week": 1
+    },
+    {
+      "id": "phys_prac_201",
+      "subject": "phys",
+      "type": "практика",
+      "groups": ["201"],
+      "teacher": "petrov",
+      "classroom": "301",
+      "hours_per_week": 1
+    },
+    {
+      "id": "phys_prac_202",
+      "subject": "phys",
+      "type": "практика",
+      "groups": ["202"],
+      "teacher": "sokolov",
+      "classroom": "302",
+      "hours_per_week": 1
+    },
+    {
+      "id": "prog_lec",
+      "subject": "prog",
+      "type": "лекция",
+      "groups": ["201", "202", "203"],
+      "teacher": "sokolov",
+      "classroom": "401",
+      "hours_per_week": 1
+    },
+    {
+      "id": "prog_lab_201",
+      "subject": "prog",
+      "type": "лабораторная",
+      "groups": ["201"],
+      "teacher": "sokolov",
+      "classroom": "lab1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "prog_lab_202",
+      "subject": "prog",
+      "type": "лабораторная",
+      "groups": ["202"],
+      "teacher": "mikhailova",
+      "classroom": "lab1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "prog_lab_203",
+      "subject": "prog",
+      "type": "лабораторная",
+      "groups": ["203"],
+      "teacher": "mikhailova",
+      "classroom": "lab2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "db_lec",
+      "subject": "db",
+      "type": "лекция",
+      "groups": ["201", "202", "203", "204"],
+      "teacher": "mikhailova",
+      "classroom": "402",
+      "hours_per_week": 1
+    },
+    {
+      "id": "db_lab_201",
+      "subject": "db",
+      "type": "лабораторная",
+      "groups": ["201"],
+      "teacher": "mikhailova",
+      "classroom": "lab1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "db_lab_202",
+      "subject": "db",
+      "type": "лабораторная",
+      "groups": ["202"],
+      "teacher": "dmitriev",
+      "classroom": "lab1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "networks_lec",
+      "subject": "networks",
+      "type": "лекция",
+      "groups": ["203", "204"],
+      "teacher": "dmitriev",
+      "classroom": "401",
+      "hours_per_week": 1
+    },
+    {
+      "id": "networks_lab_203",
+      "subject": "networks",
+      "type": "лабораторная",
+      "groups": ["203"],
+      "teacher": "dmitriev",
+      "classroom": "lab2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "networks_lab_204",
+      "subject": "networks",
+      "type": "лабораторная",
+      "groups": ["204"],
+      "teacher": "alexeeva",
+      "classroom": "lab2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "english_prac_201",
+      "subject": "english",
+      "type": "практика",
+      "groups": ["201"],
+      "teacher": "alexeeva",
+      "classroom": "301",
+      "hours_per_week": 1
+    },
+    {
+      "id": "english_prac_202",
+      "subject": "english",
+      "type": "практика",
+      "groups": ["202"],
+      "teacher": "alexeeva",
+      "classroom": "302",
+      "hours_per_week": 1
+    },
+    {
+      "id": "english_prac_203",
+      "subject": "english",
+      "type": "практика",
+      "groups": ["203"],
+      "teacher": "ivanova",
+      "classroom": "303",
+      "hours_per_week": 1
+    }
+  ]
+}
