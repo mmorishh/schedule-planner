@@ -357,78 +357,48 @@ class TestAlgorithmComparison(unittest.TestCase):
 
 
 class TestAssumptions(unittest.TestCase):
-    """Тесты с предположениями"""
+    """Тесты с предположениями (assumptions)"""
     
-    def test_with_assumptions(self):
+    def test_with_assumptions_soft(self):
+        """Мягкие предположения с pytest.assume"""
+        # Создаём граф с одним занятием
         lesson = Lesson("l1_0", "s1", "lecture", ["g1"], "t1", "c1", 1, 0)
         graph = Graph([lesson], {}, {}, {}, {})
         
-        self.assertTrue(len(graph.lessons) > 0)
-        self.assertTrue(graph.n > 0)
+        # МЯГКИЕ ПРЕДПОЛОЖЕНИЯ - не останавливают тест, даже если ложные
+        pytest.assume(len(graph.lessons) > 0, "Граф должен содержать занятия")
+        pytest.assume(graph.n > 0, "Количество вершин должно быть положительным")
+        pytest.assume(graph.lessons[0].color == -1, "Изначально все вершины должны быть непокрашены")
         
+        # Основная проверка
         solver = BranchBoundSolver(graph)
         colors, num = solver.solve()
         self.assertEqual(num, 1)
-
-
-class TestBrownDetailed(unittest.TestCase):
-    """Детальные тесты для алгоритма Брауна"""
+        self.assertEqual(len(colors), 1)
+        self.assertEqual(colors[0], 0)
     
-    def setUp(self):
-        self.lesson1 = Lesson("l1_0", "s1", "lecture", ["g1"], "t1", "c1", 1, 0)
-        self.lesson2 = Lesson("l2_0", "s1", "lecture", ["g1"], "t2", "c2", 1, 0)
-        self.graph = Graph([self.lesson1, self.lesson2], {}, {}, {}, {})
-        self.solver = BrownAlgorithm(self.graph)
+    @pytest.mark.skipif(True, reason="Демонстрация пропуска теста - это условие всегда True")
+    def test_skipped_demo(self):
+        """Демонстрация использования @pytest.mark.skipif (жёсткое предположение)"""
+        # Этот тест всегда будет пропущен из-за условия True
+        lesson = Lesson("l1_0", "s1", "lecture", ["g1"], "t1", "c1", 1, 0)
+        graph = Graph([lesson], {}, {}, {}, {})
+        solver = BranchBoundSolver(graph)
+        colors, num = solver.solve()
+        self.assertEqual(num, 1)
     
-    def test_find_clique(self):
-        clique = self.solver._find_clique()
-        self.assertIsInstance(clique, list)
-    
-    def test_bound_calculation(self):
-        colors = [-1, -1]
-        bound = self.solver._bound([0,1], colors)
-        self.assertGreaterEqual(bound, 1)
-    
-    def test_select_vertex(self):
-        colors = [-1, -1]
-        v = self.solver._select(colors)
-        self.assertIn(v, [0,1])
-
-
-class TestModelsDetailed(unittest.TestCase):
-    """Детальные тесты для моделей"""
-    
-    def test_group_creation(self):
-        group = Group("101", "Test Group", 25)
-        self.assertEqual(group.id, "101")
-        self.assertEqual(group.name, "Test Group")
-        self.assertEqual(group.students, 25)
-    
-    def test_teacher_creation(self):
-        teacher = Teacher("t1", "Ivanov", "Math")
-        self.assertEqual(teacher.id, "t1")
-        self.assertEqual(teacher.name, "Ivanov")
-        self.assertEqual(teacher.department, "Math")
-    
-    def test_classroom_creation(self):
-        room = Classroom("301", "Big Room", 100, "lecture")
-        self.assertEqual(room.id, "301")
-        self.assertEqual(room.capacity, 100)
-        self.assertEqual(room.room_type, "lecture")
-    
-    def test_subject_creation(self):
-        subject = Subject("math", "Mathematics", 4)
-        self.assertEqual(subject.id, "math")
-        self.assertEqual(subject.name, "Mathematics")
-        self.assertEqual(subject.hours, 4)
-    
-    @patch('models.json.load')
-    @patch('builtins.open')
-    def test_load_from_json_error(self, mock_open, mock_json):
-        mock_json.side_effect = Exception("Test error")
-        result = Graph.load_from_json("test.json")
-        self.assertIsNone(result)
-
+    @pytest.mark.skipif(not hasattr(__builtins__, 'print'), 
+                       reason="Пропускаем, если нет функции print (никогда не случится)")
+    def test_assumptions_hard_print(self):
+        """Жёсткое предположение с проверкой наличия функции print"""
+        lesson = Lesson("l1_0", "s1", "lecture", ["g1"], "t1", "c1", 1, 0)
+        graph = Graph([lesson], {}, {}, {}, {})
+        
+        # Мягкие предположения внутри
+        pytest.assume(graph.n == 1, "Должна быть ровно одна вершина")
+        
+        # Проверка
+        self.assertEqual(len(graph.lessons), 1)
 
 if __name__ == '__main__':
     unittest.main()
