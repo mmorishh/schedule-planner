@@ -1,0 +1,353 @@
+{
+  "groups": [
+    {
+      "id": "g0",
+      "name": "Группа-0",
+      "students": 29
+    },
+    {
+      "id": "g1",
+      "name": "Группа-1",
+      "students": 15
+    },
+    {
+      "id": "g2",
+      "name": "Группа-2",
+      "students": 17
+    },
+    {
+      "id": "g3",
+      "name": "Группа-3",
+      "students": 30
+    },
+    {
+      "id": "g4",
+      "name": "Группа-4",
+      "students": 21
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t0",
+      "name": "Смирнов Д.",
+      "department": "Химия"
+    },
+    {
+      "id": "t1",
+      "name": "Иванов П.",
+      "department": "Химия"
+    },
+    {
+      "id": "t2",
+      "name": "Сидоров А.",
+      "department": "Математика"
+    },
+    {
+      "id": "t3",
+      "name": "Сидоров И.",
+      "department": "Математика"
+    },
+    {
+      "id": "t4",
+      "name": "Кузнецов С.",
+      "department": "Физика"
+    },
+    {
+      "id": "t5",
+      "name": "Смирнов П.",
+      "department": "Математика"
+    },
+    {
+      "id": "t6",
+      "name": "Иванов А.",
+      "department": "Физика"
+    }
+  ],
+  "classrooms": [
+    {
+      "id": "c0",
+      "name": "486",
+      "capacity": 50,
+      "room_type": "lecture"
+    },
+    {
+      "id": "c1",
+      "name": "158",
+      "capacity": 50,
+      "room_type": "seminar"
+    },
+    {
+      "id": "c2",
+      "name": "259",
+      "capacity": 20,
+      "room_type": "lab"
+    },
+    {
+      "id": "c3",
+      "name": "100",
+      "capacity": 50,
+      "room_type": "seminar"
+    },
+    {
+      "id": "c4",
+      "name": "279",
+      "capacity": 40,
+      "room_type": "lab"
+    },
+    {
+      "id": "c5",
+      "name": "138",
+      "capacity": 50,
+      "room_type": "lecture"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "s0",
+      "name": "История",
+      "hours": 108
+    },
+    {
+      "id": "s1",
+      "name": "Экономика",
+      "hours": 48
+    },
+    {
+      "id": "s2",
+      "name": "Английский язык",
+      "hours": 48
+    },
+    {
+      "id": "s3",
+      "name": "Психология",
+      "hours": 72
+    },
+    {
+      "id": "s4",
+      "name": "Психология",
+      "hours": 48
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l_20_0",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t6",
+      "classroom": "c4",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_1",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t1",
+      "classroom": "c1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_2",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t2",
+      "classroom": "c2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_3",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t3",
+      "classroom": "c3",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_4",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t3",
+      "classroom": "c2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_5",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t5",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_6",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t6",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_7",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t6",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_8",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t1",
+      "classroom": "c2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_9",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t1",
+      "classroom": "c1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_10",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t2",
+      "classroom": "c2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_11",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t4",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_12",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t5",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_13",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t5",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_14",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t6",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_15",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t1",
+      "classroom": "c3",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_16",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t2",
+      "classroom": "c4",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_17",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t2",
+      "classroom": "c3",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_18",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t4",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_20_19",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t5",
+      "classroom": "c1",
+      "hours_per_week": 1
+    }
+  ]
+}

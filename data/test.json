@@ -1,0 +1,76 @@
+{
+  "groups": [
+    {
+      "id": "g1",
+      "name": "101",
+      "students": 25
+    },
+    {
+      "id": "g2",
+      "name": "102",
+      "students": 30
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t1",
+      "name": "Иванов",
+      "department": "Математика"
+    },
+    {
+      "id": "t2",
+      "name": "Петров",
+      "department": "Физика"
+    }
+  ],
+  "classrooms": [
+    {
+      "id": "c1",
+      "name": "301",
+      "capacity": 30,
+      "room_type": "lecture"
+    },
+    {
+      "id": "c2",
+      "name": "302",
+      "capacity": 20,
+      "room_type": "lab"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "s1",
+      "name": "Математика",
+      "hours": 72
+    },
+    {
+      "id": "s2",
+      "name": "Физика",
+      "hours": 64
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l1",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t1",
+      "classroom": "c1",
+      "hours_per_week": 2
+    },
+    {
+      "id": "l2",
+      "subject": "s2",
+      "type": "lab",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t2",
+      "classroom": "c2",
+      "hours_per_week": 1
+    }
+  ]
+}

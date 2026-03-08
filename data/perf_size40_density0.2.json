@@ -1,0 +1,678 @@
+{
+  "groups": [
+    {
+      "id": "g0",
+      "name": "Группа-0",
+      "students": 28
+    },
+    {
+      "id": "g1",
+      "name": "Группа-1",
+      "students": 29
+    },
+    {
+      "id": "g2",
+      "name": "Группа-2",
+      "students": 17
+    },
+    {
+      "id": "g3",
+      "name": "Группа-3",
+      "students": 15
+    },
+    {
+      "id": "g4",
+      "name": "Группа-4",
+      "students": 22
+    },
+    {
+      "id": "g5",
+      "name": "Группа-5",
+      "students": 16
+    },
+    {
+      "id": "g6",
+      "name": "Группа-6",
+      "students": 17
+    },
+    {
+      "id": "g7",
+      "name": "Группа-7",
+      "students": 24
+    },
+    {
+      "id": "g8",
+      "name": "Группа-8",
+      "students": 30
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t0",
+      "name": "Иванов Е.",
+      "department": "Информатика"
+    },
+    {
+      "id": "t1",
+      "name": "Петров С.",
+      "department": "История"
+    },
+    {
+      "id": "t2",
+      "name": "Иванов О.",
+      "department": "Химия"
+    },
+    {
+      "id": "t3",
+      "name": "Попов О.",
+      "department": "Химия"
+    },
+    {
+      "id": "t4",
+      "name": "Кузнецов Д.",
+      "department": "Математика"
+    },
+    {
+      "id": "t5",
+      "name": "Сидоров И.",
+      "department": "Математика"
+    },
+    {
+      "id": "t6",
+      "name": "Смирнов П.",
+      "department": "История"
+    },
+    {
+      "id": "t7",
+      "name": "Смирнов Е.",
+      "department": "Физика"
+    },
+    {
+      "id": "t8",
+      "name": "Иванов П.",
+      "department": "Химия"
+    },
+    {
+      "id": "t9",
+      "name": "Иванов П.",
+      "department": "Физика"
+    },
+    {
+      "id": "t10",
+      "name": "Иванов О.",
+      "department": "История"
+    },
+    {
+      "id": "t11",
+      "name": "Смирнов А.",
+      "department": "Информатика"
+    },
+    {
+      "id": "t12",
+      "name": "Смирнов О.",
+      "department": "Математика"
+    },
+    {
+      "id": "t13",
+      "name": "Сидоров А.",
+      "department": "Биология"
+    }
+  ],
+  "classrooms": [
+    {
+      "id": "c0",
+      "name": "319",
+      "capacity": 50,
+      "room_type": "lab"
+    },
+    {
+      "id": "c1",
+      "name": "115",
+      "capacity": 100,
+      "room_type": "seminar"
+    },
+    {
+      "id": "c2",
+      "name": "433",
+      "capacity": 30,
+      "room_type": "seminar"
+    },
+    {
+      "id": "c3",
+      "name": "476",
+      "capacity": 100,
+      "room_type": "lecture"
+    },
+    {
+      "id": "c4",
+      "name": "286",
+      "capacity": 30,
+      "room_type": "seminar"
+    },
+    {
+      "id": "c5",
+      "name": "256",
+      "capacity": 30,
+      "room_type": "seminar"
+    },
+    {
+      "id": "c6",
+      "name": "113",
+      "capacity": 40,
+      "room_type": "lab"
+    },
+    {
+      "id": "c7",
+      "name": "304",
+      "capacity": 40,
+      "room_type": "lecture"
+    },
+    {
+      "id": "c8",
+      "name": "359",
+      "capacity": 50,
+      "room_type": "lab"
+    },
+    {
+      "id": "c9",
+      "name": "107",
+      "capacity": 30,
+      "room_type": "lecture"
+    },
+    {
+      "id": "c10",
+      "name": "349",
+      "capacity": 40,
+      "room_type": "lecture"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "s0",
+      "name": "Психология",
+      "hours": 48
+    },
+    {
+      "id": "s1",
+      "name": "Литература",
+      "hours": 48
+    },
+    {
+      "id": "s2",
+      "name": "Литература",
+      "hours": 108
+    },
+    {
+      "id": "s3",
+      "name": "Информатика",
+      "hours": 72
+    },
+    {
+      "id": "s4",
+      "name": "Физика",
+      "hours": 48
+    },
+    {
+      "id": "s5",
+      "name": "Экономика",
+      "hours": 108
+    },
+    {
+      "id": "s6",
+      "name": "Математика",
+      "hours": 72
+    },
+    {
+      "id": "s7",
+      "name": "Физика",
+      "hours": 72
+    },
+    {
+      "id": "s8",
+      "name": "Химия",
+      "hours": 72
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l_40_0",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t12",
+      "classroom": "c3",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_1",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t1",
+      "classroom": "c1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_2",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t0",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_3",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t1",
+      "classroom": "c6",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_4",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t2",
+      "classroom": "c7",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_5",
+      "subject": "s5",
+      "type": "lecture",
+      "groups": [
+        "g5"
+      ],
+      "teacher": "t3",
+      "classroom": "c8",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_6",
+      "subject": "s6",
+      "type": "lecture",
+      "groups": [
+        "g6"
+      ],
+      "teacher": "t4",
+      "classroom": "c9",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_7",
+      "subject": "s7",
+      "type": "lecture",
+      "groups": [
+        "g7"
+      ],
+      "teacher": "t5",
+      "classroom": "c10",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_8",
+      "subject": "s8",
+      "type": "lecture",
+      "groups": [
+        "g8"
+      ],
+      "teacher": "t6",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_9",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t7",
+      "classroom": "c1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_10",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t8",
+      "classroom": "c2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_11",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t11",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_12",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t10",
+      "classroom": "c4",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_13",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t11",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_14",
+      "subject": "s5",
+      "type": "lecture",
+      "groups": [
+        "g5"
+      ],
+      "teacher": "t12",
+      "classroom": "c6",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_15",
+      "subject": "s6",
+      "type": "lecture",
+      "groups": [
+        "g6"
+      ],
+      "teacher": "t13",
+      "classroom": "c7",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_16",
+      "subject": "s7",
+      "type": "lecture",
+      "groups": [
+        "g7"
+      ],
+      "teacher": "t2",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_17",
+      "subject": "s8",
+      "type": "lecture",
+      "groups": [
+        "g8"
+      ],
+      "teacher": "t1",
+      "classroom": "c9",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_18",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t2",
+      "classroom": "c10",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_19",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t3",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_20",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t4",
+      "classroom": "c1",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_21",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t5",
+      "classroom": "c2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_22",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t6",
+      "classroom": "c3",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_23",
+      "subject": "s5",
+      "type": "lecture",
+      "groups": [
+        "g5"
+      ],
+      "teacher": "t7",
+      "classroom": "c4",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_24",
+      "subject": "s6",
+      "type": "lecture",
+      "groups": [
+        "g6"
+      ],
+      "teacher": "t8",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_25",
+      "subject": "s7",
+      "type": "lecture",
+      "groups": [
+        "g7"
+      ],
+      "teacher": "t11",
+      "classroom": "c3",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_26",
+      "subject": "s8",
+      "type": "lecture",
+      "groups": [
+        "g8"
+      ],
+      "teacher": "t10",
+      "classroom": "c7",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_27",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t11",
+      "classroom": "c8",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_28",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t12",
+      "classroom": "c9",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_29",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t13",
+      "classroom": "c10",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_30",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t0",
+      "classroom": "c0",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_31",
+      "subject": "s4",
+      "type": "lecture",
+      "groups": [
+        "g4"
+      ],
+      "teacher": "t3",
+      "classroom": "c9",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_32",
+      "subject": "s5",
+      "type": "lecture",
+      "groups": [
+        "g5"
+      ],
+      "teacher": "t2",
+      "classroom": "c2",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_33",
+      "subject": "s6",
+      "type": "lecture",
+      "groups": [
+        "g6"
+      ],
+      "teacher": "t3",
+      "classroom": "c3",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_34",
+      "subject": "s7",
+      "type": "lecture",
+      "groups": [
+        "g7"
+      ],
+      "teacher": "t4",
+      "classroom": "c4",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_35",
+      "subject": "s8",
+      "type": "lecture",
+      "groups": [
+        "g8"
+      ],
+      "teacher": "t5",
+      "classroom": "c5",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_36",
+      "subject": "s0",
+      "type": "lecture",
+      "groups": [
+        "g0"
+      ],
+      "teacher": "t6",
+      "classroom": "c6",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_37",
+      "subject": "s1",
+      "type": "lecture",
+      "groups": [
+        "g1"
+      ],
+      "teacher": "t7",
+      "classroom": "c7",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_38",
+      "subject": "s2",
+      "type": "lecture",
+      "groups": [
+        "g2"
+      ],
+      "teacher": "t8",
+      "classroom": "c8",
+      "hours_per_week": 1
+    },
+    {
+      "id": "l_40_39",
+      "subject": "s3",
+      "type": "lecture",
+      "groups": [
+        "g3"
+      ],
+      "teacher": "t9",
+      "classroom": "c9",
+      "hours_per_week": 1
+    }
+  ]
+}
